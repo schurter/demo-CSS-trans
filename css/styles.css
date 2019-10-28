@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* STUDENTS, PUT YOUR STYLES HERE */
+.item_1_box {
+	width: 50%;
+}
+
+.item_2_box {
+	color: #600;
+}
+
+.item_3_box {
+
+}
+
+.item_4_box {
+	opacity: .6;
+	color: #600;
+}
+
+.item_5_box {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+}
+
+
+
+
+/* DO NOT TOUCH STYLES BELOW HERE. Designing for mobile first */
+html {	background-color:#000;
+	font-size:100%;	}
+body {	background-color:#cce;
+	font-size:90%;
+	width:94%; max-width:1280px;
+	margin: 0 auto 1rem auto;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height: 1.4;	}
+header {	background-color:#668; }
+main {
+	display:block;
+	padding: 1rem 1rem 1rem 1rem;
+}
+h1 { font-size:1.4rem;
+	font-weight:bold;
+	padding:1rem;
+	color: #fff; }
+h2, h3, h4, h5, h6 { 
+	font-weight:bold;
+	padding:1rem;
+	color: #fc9; }
+a  { color:#ddf;text-decoration:underline; }
+a:link  { color:#ddf;  }
+a:visited { color:#bbf; }
+a:hover { color:#fff;   }
+a:focus { color:#fff; }
+a:active { color:#99f; }
+
+.grid-container {
+	padding: 2rem 0 0 0;
+}
+article {
+	margin: 0 1% .5rem 0;
+	position: relative;
+	background-color:#fff;
+	height: 16rem;
+}
+article header {
+	background-color:#eef;
+	padding: 1rem 1rem 1rem 1rem;
+}
+article footer {
+	background-color:#eef;
+	width:100%;
+	font-style:italic;
+	font-size: .8rem;
+	color:#600;
+	position:absolute;
+	bottom:0;
+	min-height:3rem;
+}
+article footer p {
+	padding: 1rem 1rem 1rem 1rem;
+}
+
+/* STYLES ALL THE GREEN ITEM BOXES SHARE */
+
+section {
+	background-color:#fb6;
+	width: 50%; height: 1.2rem;
+	font-size: .9rem;
+	padding: 4%;
+	color:#600;
+	text-align:center;
+	margin: 6% auto 6% auto;
+	cursor:pointer;
+}
+
+
+/* define styles that should only happen if the screen is wider */
+@media screen and (min-width:481px){
+	html{
+		font-size:100%;
+	}
+}
+@media screen and (min-width:721px){
+	html{
+		font-size:110%;
+	}
+	.grid-container {
+		display:flex;
+		flex-flow:row wrap;
+		justify-content: left;
+		padding: 2rem 0 0 0;
+	}
+	article {
+		margin: 0 1% .5rem 0;
+		flex:1 1 32%;
+		height: 20rem;
+	}
+	article header {
+		min-height:7rem;
+	}
+	article footer {
+		width:100%;
+	}
+}
+@media screen and (min-width:960px){
+	html{
+		font-size:120%;
+	}
+}
